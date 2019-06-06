@@ -88,4 +88,8 @@
     <None Include="**/*.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="corefx\System.Collections\Dictionary\Perf_Dictionary_String.cs" />
+  </ItemGroup>
+
 </Project>

@@ -116,7 +116,7 @@ namespace ResultsComparer
                 .Take(args.TopCount ?? int.MaxValue)
                 .Select(result => new
                 {
-                    Id = result.id.Length > 80 ? result.id.Substring(0, 80) : result.id,
+                    Id = result.id,
                     DisplayValue = GetRatio(conclusion, result.baseResult, result.diffResult),
                     BaseMedian = result.baseResult.Statistics.Median,
                     DiffMedian = result.diffResult.Statistics.Median,
